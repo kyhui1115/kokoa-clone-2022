@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welecome to Kokoa Clone</title>
+  </head>
+  <body>
+    <!-- BEM(block, Element, Modifier) 방식으로 class 이름 설정  -->
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <i class="fa-solid fa-battery-full fa-lg"></i>
+        <i class="fa-solid fa-bolt"></i>
+      </div>
+    </div>
+    <header class="welcome-header">
+      <h1 class="welecome_header__title">Welecome to Kokoa Clone</h1>
+      <p class="welecome_header__text">
+        If you have a Kokoa Clone Account, log in with your email or phone
+        number
+      </p>
+    </header>
+    <form id="login-form">
+      <input type="text" placeholder="Email or phone number" />
+      <input type="password" placeholder="Password" />
+      <input type="submit" value="Log In" />
+      <a href="#">Find Kokoa Account or Password</a>
+    </form>
+    <!-- fontawesome 사이트 활용(아이콘, 스타일 등) -->
+    <!-- script는 body 맨 마지막에 위치 -->
+    <script
+      src="https://kit.fontawesome.com/b9a2760569.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
