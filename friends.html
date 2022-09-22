@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welecome to Kokoa Clone</title>
+    <title>Friends - Kokoa Clone</title>
   </head>
   <body>
     <div class="status-bar">
@@ -23,22 +23,33 @@
         <i class="fa-solid fa-bolt"></i>
       </div>
     </div>
-    <header class="welcome-header">
-      <h1 class="welcome-header__title">Welecome to Kokoa Clone</h1>
-      <p class="welcome-header__text">
-        If you have a Kokoa Clone Account, log in with your email or phone
-        number
-      </p>
-    </header>
 
-    <form action="friends.html" method="get" id="login-form">
-      <!-- action : (form의 데이터 처리 후)입력한 URI로 이동 -->
-      <!-- method : action의 방법(post : 백엔드에 form 데이터 전송 / get : URL? 뒤에 form 데이터를 이어붙여 전송) -->
-      <input name="username" type="text" placeholder="Email or phone number" />
-      <input name="password" type="password" placeholder="Password" />
-      <input type="submit" value="Log In" />
-      <a href="#">Find Kokoa Account or Password</a>
-    </form>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html"
+            ><i class="fa-solid fa-user fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="#"
+            ><i class="fa-regular fa-comment fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="#"
+            ><i class="fa-solid fa-magnifying-glass fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="#"
+            ><i class="fas fa-ellipsis-h fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- 단축키 : nav>ul>li*4>a -->
+
     <script
       src="https://kit.fontawesome.com/b9a2760569.js"
       crossorigin="anonymous"
