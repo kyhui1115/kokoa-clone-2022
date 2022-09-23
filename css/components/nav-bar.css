@@ -5,6 +5,7 @@
   background-color: #f9f9fa;
   padding: 20px 50px;
   box-sizing: border-box;
+  /* box-sizing: border-box = 테두리와 안쪽 여백도 요소의 크기로 고려 */
   border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
@@ -14,5 +15,25 @@
 }
 
 .nav__link {
+  position: relative;
+  /* relative = 요소를 일반적인 문서 흐름에 따라 배치하고, 자기 자신을 기준으로 top, right, bottom, left의 값에 따라 오프셋을 적용 */
   color: #2e363e;
+}
+
+.nav__notification {
+  position: absolute;
+  /* absolute = 요소를 일반적인 문서 흐름에서 제거하고, 페이지 레이아웃에 공간도 배정하지 않습니다. */
+  /* absolute는 가장 가까운 relative를 가진 부모를 기준으로 움직임 */
+  left: 22px;
+  bottom: 14px;
+}
+
+.nav__red-dot {
+  background-color: tomato;
+  display: flex;
+  width: 5px;
+  height: 5px;
+  border-radius: 2.5px;
+  position: absolute;
+  left: 29px;
 }
