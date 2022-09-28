@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Friends - Kokoa Clone</title>
+    <title>More - Kokoa Clone</title>
   </head>
   <body>
     <div class="status-bar">
@@ -25,21 +25,20 @@
     </div>
 
     <header class="screen-header">
-      <h1 class="screen-header__title">Friends</h1>
+      <h1 class="screen-header__title">More</h1>
       <div class="screen-header__icons">
         <span><i class="fa-solid fa-magnifying-glass fa-xl"></i></span>
         <span><i class="fa-sharp fa-solid fa-music fa-xl"></i></span>
-        <span><i class="fa-sharp fa-solid fa-gear fa-xl"></i></span>
+        <span class="screen-header__gear"
+          ><a href="settings.html"
+            ><span class="screen-header__red-dot"></span>
+            <i class="fa-sharp fa-solid fa-gear fa-xl"></i
+          ></a>
+        </span>
       </div>
     </header>
 
-    <a id="friends-display-link" href="#">
-      <i class="fa-solid fa-circle-info"></i>
-      <span>Friends' Names Display</span>
-      <i class="fas fa-chevron-right fa-xs"></i>
-    </a>
-
-    <main class="friends-screen">
+    <main class="main-screen more-screen">
       <div class="user-component">
         <div class="user-component__column">
           <img
@@ -48,32 +47,65 @@
           />
           <div class="user-component__text">
             <h4 class="user-component__title">YongHui</h4>
-            <!-- <h6 class="user-component__subtitle">this text whatever</h6> -->
+            <h6 class="user-component__subtitle">
+              <span>+1 787-493-4219</span>
+              <span class="user-component__exclamation-mark">!</span>
+            </h6>
           </div>
         </div>
-        <div class="user-component__column"></div>
+        <div class="user-component__column">
+          <i class="far fa-comment-alt fa-2x"></i>
+        </div>
       </div>
-      <!-- 단축키 = div.user-component__column*2 -->
-      <div class="friends-screen__channel">
-        <div class="friends-screen__channel-header">
-          <span>Channel</span>
-          <i class="fas fa-chevron-up fa-xs"></i>
+      <div class="icon-raw">
+        <div class="icon-raw__icon">
+          <i class="far fa-calendar-check"></i>
+          <span>Calendar</span>
         </div>
-        <div class="user-component">
-          <div class="user-component__column">
-            <img
-              src="screenshots/avatar.png"
-              class="user-component__avatar user-component__avatar--sm"
-            />
-            <div class="user-component__text">
-              <h4 class="user-component__title user-component__title--not-bold">
-                Channel
-              </h4>
+        <div class="icon-raw__icon">
+          <i class="far fa-smile-wink"></i>
+          <span>Emoticons</span>
+        </div>
+        <div class="icon-raw__icon">
+          <i class="fas fa-paint-roller"></i>
+          <span>Themes</span>
+        </div>
+        <div class="icon-raw__icon">
+          <i class="fas fa-money-check-alt"></i>
+          <span>Account</span>
+        </div>
+        <div class="icon-raw__icon icon-raw__talk-drive">
+          <i class="fas fa-download"></i>
+          <span>Talk Drive</span>
+          <span></span>
+        </div>
+        <div class="icon-raw__icon">
+          <i class="fa-regular fa-comments"></i>
+          <span>Openchat</span>
+        </div>
+        <div class="icon-raw__icon"></div>
+        <div class="icon-raw__icon"></div>
+      </div>
+      <div class="more-suggestions">
+        <h4 class="more-suggestions__title">Suggentions</h4>
+        <div class="more-suggestions__icons">
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image">
+              <i class="fas fa-quote-right"></i>
             </div>
+            <span class="more-suggestions__icon-text">Kakao Story</span>
           </div>
-          <div class="user-component__column">
-            <div><span>2</span> <i class="fas fa-chevron-right fa-xs"></i></div>
-            <!-- div를 추가해서 부모 div의 flex의 영향을 받지 않기 위함 -->
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image">
+              <i class="fas fa-quote-right"></i>
+            </div>
+            <span class="more-suggestions__icon-text">Kakao Story</span>
+          </div>
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image">
+              <i class="fas fa-quote-right"></i>
+            </div>
+            <span class="more-suggestions__icon-text">Kakao Story</span>
           </div>
         </div>
       </div>
@@ -84,7 +116,7 @@
       <ul class="nav__list">
         <li class="nav__btn">
           <a class="nav__link" href="friends.html"
-            ><i class="fa-solid fa-user fa-2x"></i
+            ><i class="fa-regular fa-user fa-2x"></i
           ></a>
         </li>
         <li class="nav__btn">
@@ -107,10 +139,6 @@
       </ul>
     </nav>
     <!-- 단축키 : nav>ul>li*4>a -->
-
-    <div id="splash-screen">
-      <i class="fa-solid fa-comment"></i>
-    </div>
 
     <script
       src="https://kit.fontawesome.com/b9a2760569.js"

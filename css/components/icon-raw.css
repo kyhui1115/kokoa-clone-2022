@@ -1,0 +1,39 @@
+.icon-raw {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* flex-wrap = flex 요소들이 어떻게 배치될 것인가를 설정 */
+}
+
+.icon-raw__icon {
+  display: flex;
+  flex-direction: column;
+  /* column는 y축으로 변경, row는 x축 */
+  align-items: center;
+  padding: 10px;
+  width: 25%;
+  box-sizing: border-box;
+}
+
+.icon-raw__icon i {
+  font-size: 32px;
+}
+
+.icon-raw__icon span {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.icon-raw__talk-drive {
+  position: relative;
+}
+
+.icon-raw__talk-drive span:last-child {
+  position: absolute;
+  background-color: tomato;
+  width: 5px;
+  height: 5px;
+  border-radius: 2.5px;
+  top: -8px;
+  right: 25px;
+}
